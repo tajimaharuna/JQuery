@@ -33,12 +33,11 @@ while (i < animals.length){
 var animals = ['パンダ', 'ライオン', 'キリン'];
 var answer = prompt('パンダ, ライオン, キリン');
 var i = 0;
-while(true){
-    if(i <= animals.length,i==animals[1]){
+while(i < animals.length){
+    if(i ==animals[1]){
         break;
     }
     alert(animals[i]);
-    i++;
 }
 
 
