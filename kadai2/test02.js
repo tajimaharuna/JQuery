@@ -1,3 +1,4 @@
+//Jquery02課題
 //jQueryオブジェクトを削除するメソッドを調べ、<h2>を非表示(hide)ではなく、削除してみましょう。
 
 (function($, window) {
