@@ -1,4 +1,4 @@
-/*
+
 //1.promptで入力した値から「正の数」「負の数」を判定してalertする処理を書いてください。//
 var answer = prompt('正の数か負の数か？');
 if(answer >= 0){
@@ -26,25 +26,27 @@ while (i < animals.length){
     i++;
 }
 
-*/
 
 // 4. 3.でwhile文より前にpromptでキー入力し、その入力した内容が'ライオン'の場合に処理を中断するように変更してください。
 
 var animals = ['パンダ', 'ライオン', 'キリン'];
-var answer = prompt('パンダ, ライオン, キリン');
+var answer = prompt('パンダ、ライオン、キリンのどれかを入力してください');
+
 var i = 0;
 while(i < animals.length){
-    if(i ==animals[1]){
+    if(answer == animals[i]){
+        if(answer == animals[1]){
+        alert('入力' + answer + 'i=' + i + '配列' + animals[i] + '正解');
         break;
+     }
     }
-    alert(animals[i]);
+    alert('入力' + answer + 'I=' + i + '配列' + animals[i]);
+    // alert()
+    // alert(animals[i]);
+    i++;
 }
 
 
-
-
-
-/*
 // 6. オブジェクト変数の配列の形式で、動物と体重を表現してみましょう。
 //例としてパンダは80(Kg)、ライオンは200(Kg)、キリンは300(Kg)としましょう。
 
@@ -83,4 +85,4 @@ function calc(i) {
     return i * i * 3.14
 }
 alert(calc(4));
-*/
+
